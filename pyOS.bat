@@ -1,2 +1,1 @@
-cd src
-python __main__.py
+python src/__main__.py

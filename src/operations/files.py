@@ -1,14 +1,13 @@
 import os
 from textwrap import wrap
-from operations import cd
-from termInfo import termCols
+from sysops.termInfo import termCols
 from termcolor import colored,cprint
 
 class Files:
     def make(self, indent):
         try:
             filename = input(str(indent) + "File name: ")
-            myFile = open(os.path.dirname(__file__) + "/../../Files/" + cd.currDir + filename, "w")
+            myFile = open(os.path.dirname(__file__) + "/../../Files/" + filename, "w")
             contents = input(str(indent) + "Please write to the file (only one line): ")
             myFile.write(contents)
             myFile.close()
@@ -17,16 +16,16 @@ class Files:
 
     def use(self, indent):
         filename = input(str(indent) + "What file do you want to open? ")
-        os.system("start ../../Files/" + cd.currDir + filename)
+        os.system("start ../../Files/" + filename)
 
     def delete(self, indent):
         filename = input(str(indent) + "What file would you like to delete? ")
-        os.remove(os.path.dirname(__file__) + "/../../Files/" + cd.currDir + filename)
+        os.remove(os.path.dirname(__file__) + "/../../Files/" + filename)
 
     def listF(self, indent):
         dirList = []
         fileList = []
-        for root,dirs,files in os.walk(os.path.dirname(__file__) + "/../../Files/" + cd.currDir):
+        for root,dirs,files in os.walk(os.path.dirname(__file__) + "/../../Files/"):
             for name in dirs:
                 dirList.append(name + "/")
             for Ffile in files:

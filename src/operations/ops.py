@@ -1,8 +1,9 @@
 import os
+import __main__
 from textwrap import wrap
-import login, __main__, termInfo
+from sysops import login, termInfo
 from termcolor import colored, cprint
-from operations import credentials, maths, files, directories, cd
+from operations import credentials, maths, files, directories
 
 item1 = "\t"
 
@@ -23,7 +24,6 @@ operations = [
     "directory.make",
     "directory.delete",
     "ls",
-    "cd",
     "back",
     "clear",
     "exit"
@@ -39,7 +39,6 @@ def mainOps():
         __main__.mainOS()
     elif choice == operations[-2]:
         os.system("cls")
-        # ? Prints functions
         for i in wrap("    ".join(operations), width=termInfo.termCols() * (2.0/3.0)):
             cprint(i, "cyan")
         mainOps()
@@ -71,8 +70,6 @@ def mainOps():
         Directories.delete(Directories, "\t\t")
     elif choice == operations[-5]:
         Files.listF(Files, "\t\t")
-    elif choice == operations[-4]:
-        cd.cd("\t\t")
-    # elif choice == operations[12]:
-    #     Directories.listF(Directories, "\t\t")
+    else:
+        cprint("No such operation", "red")
     mainOps()

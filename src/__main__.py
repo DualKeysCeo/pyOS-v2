@@ -1,10 +1,10 @@
 import os
 from time import sleep
+from sysops import login
 from textwrap import wrap
-from login import login, logout
-from termcolor import colored, cprint
 from operations import ops
-from termInfo import termCols
+from termcolor import colored, cprint
+from sysops.termInfo import termCols
 
 global user
 global password
@@ -20,18 +20,11 @@ def mainOS():
     # ? Prints functions
     for i in wrap("    ".join(ops.operations), width=termCols() * (2.0/3.0)):
         cprint(i, "cyan")
-    while True:
-        ops.mainOps()
-    choice = input(colored("pyOS> ", "white"))
-    if choice.lower() == "logout" or choice.lower() == "log out":
-        os.system("cls")
-        logout()
-    else:
-        cprint("No such operation", "red")
+    ops.mainOps();
 
 if __name__ == "__main__":
     os.system("cls")
-    login()
+    login.login()
     os.system("cls")
     while True:
         mainOS()
