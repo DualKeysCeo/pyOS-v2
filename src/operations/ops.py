@@ -1,16 +1,16 @@
 import os
 import __main__
 from termcolor import colored, cprint
-from operations.bulletins import BaseBulletins
+from operations.built_in import BaseBuilt_Ins
 
 item1 = "\t"
 
-bulletins = BaseBulletins()
+built_ins = BaseBuilt_Ins()
 
 def mainOps():
     while True:
         choice = ask()
-        selected_builtin = bulletins.get_builtin(choice)
+        selected_builtin = built_ins.get_builtin(choice)
         if selected_builtin is not None:
             selected_builtin()
         ##else if lookup_path ?

@@ -17,7 +17,7 @@ cs = "Coming soon"
 def mainOS():
     os.system("cls")
     cprint("PyOS v" + version, "magenta")
-    cprint("Copyright DualKeys Inc. 2017-2018. All rights reserved", "magenta")
+    cprint("Copyright DualKeys Inc. 2017-2018.", "magenta")
     mainOps()
 
 

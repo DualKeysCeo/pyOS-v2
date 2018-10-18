@@ -4,13 +4,13 @@ from sysops import login, termInfo
 from termcolor import colored, cprint
 from operations import credentials, maths, files, directories
 
-class BaseBulletins:
-    bulletins = None
+class BaseBuilt_Ins:
+    built_ins = None
 
     def __init__(self):
-        self.bulletins = self.Bulletins()
+        self.built_ins = self.Built_Ins()
 
-    class Bulletins:
+    class Built_Ins:
         def __init__(self):
             pass
 
@@ -53,6 +53,6 @@ class BaseBulletins:
                 cprint(i, "cyan")
 
     def get_builtin(self, command):
-        if hasattr(self.bulletins, command) is True:
-            return getattr(self.bulletins, command)
+        if hasattr(self.built_ins, command) is True:
+            return getattr(self.built_ins, command)
         return None
