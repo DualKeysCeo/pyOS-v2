@@ -11,11 +11,12 @@ global password
 global userI
 global passwordI
 
+version = "2.2"
 cs = "Coming soon"
 
 def mainOS():
     os.system("cls")
-    cprint("PyOS v2", "magenta")
+    cprint("PyOS v" + version, "magenta")
     cprint("Copyright DualKeys Inc. 2017-2018. All rights reserved", "magenta")
     mainOps()
 
