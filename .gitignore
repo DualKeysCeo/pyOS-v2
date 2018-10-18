@@ -1,1 +1,4 @@
 Files/*.*
+*/__pychache__/*
+*.cpython
+*.pyc
