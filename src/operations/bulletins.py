@@ -4,13 +4,13 @@ from sysops import login, termInfo
 from termcolor import colored, cprint
 from operations import credentials, maths, files, directories
 
-class BaseBuiltins:
-    builtins = None
+class BaseBulletins:
+    bulletins = None
 
     def __init__(self):
-        self.builtins = self.Builtins()
+        self.bulletins = self.Bulletins()
 
-    class Builtins:
+    class Bulletins:
         def __init__(self):
             pass
 
@@ -40,7 +40,7 @@ class BaseBuiltins:
             files.choose()
 
         def directory(self):
-            directories.Directories.choose()
+            directories.choose()
 
         def help(self):
             method_list = [func for func in dir(self) if callable(getattr(self, func)) and not func.startswith("__")]
@@ -48,6 +48,6 @@ class BaseBuiltins:
                 cprint(i, "cyan")
 
     def get_builtin(self, command):
-        if hasattr(self.builtins, command) is True:
-            return getattr(self.builtins, command)
+        if hasattr(self.bulletins, command) is True:
+            return getattr(self.bulletins, command)
         return None

@@ -2,7 +2,7 @@ import os
 from time import sleep
 from sysops import login
 from textwrap import wrap
-from operations.ops import mainOps, list, ask
+from operations.ops import mainOps, ask
 from termcolor import colored, cprint
 from sysops.termInfo import termCols
 
@@ -18,6 +18,8 @@ def mainOS():
     cprint("PyOS v2", "magenta")
     cprint("Copyright DualKeys Inc. 2017-2018. All rights reserved", "magenta")
     mainOps()
+
+
 if __name__ == "__main__":
     os.system("cls")
     login.login()
