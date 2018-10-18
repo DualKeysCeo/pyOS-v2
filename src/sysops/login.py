@@ -37,7 +37,7 @@ def login():
 def logout():
     string = "Logging out"
     sleep(0.5)
-    for i in range(4):
+    for _ in range(4):
         if string == "Logging out...":
             string = "Logging out"
             sleep(0.5)
