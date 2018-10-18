@@ -18,21 +18,21 @@ class Directories:
         except:
             cprint("Please empty the directory first", "red")
 
+    def choose():
+        for i in wrap("    ".join(dirOps), width=termInfo.termCols() * (2.0/3.0)):
+            cprint(i, "cyan")
+
+        choice = input(colored("pyOS/operations/file> ", "white"))
+        choice = choice.lower()
+
+        if choice == dirOps[0]:
+            Directories.make(Directories, "\t\t")
+        elif choice == dirOps[1]:
+            Directories.delete(Directories, "\t\t")
+        else:
+            cprint("That is not a function. Type help or commands for a list of commands", "red")
+
 dirOps = [
     "make",
     "delete"
 ]
-
-def choose():
-    for i in wrap("    ".join(dirOps), width=termInfo.termCols() * (2.0/3.0)):
-        cprint(i, "cyan")
-
-    choice = input(colored("pyOS/operations/file> ", "white"))
-    choice = choice.lower()
-
-    if choice == dirOps[0]:
-        Directories.make(Directories, "\t\t")
-    elif choice == dirOps[1]:
-        Directories.delete(Directories, "\t\t")
-    else:
-        cprint("That is not a function. Type help or commands for a list of commands", "red")
