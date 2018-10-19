@@ -14,9 +14,6 @@ class BaseBuilt_Ins:
         def __init__(self):
             pass
 
-        def hello(self):
-            print("Hello world")
-
         def exit(self):
             login.logout()
 
