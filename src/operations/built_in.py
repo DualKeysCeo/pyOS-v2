@@ -21,7 +21,10 @@ class BaseBuilt_Ins:
             login.logout()
 
         def clear(self):
-            os.system("cls")
+            try:
+                os.system("cls")
+            except:
+                os.system("clear")
 
         def ls(self):
             files.Files.listF(files.Files, "\t\t")

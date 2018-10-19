@@ -5,3 +5,5 @@ pyOS is a terminal based operating system written in Python. Our dev team is cur
 ## Versions
 
 * Windows
+* MacOS X
+* Linux

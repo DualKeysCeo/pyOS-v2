@@ -2,7 +2,7 @@ import os
 from time import sleep
 from sysops import login
 from textwrap import wrap
-from operations.ops import mainOps, ask
+from operations.ops import mainOps
 from termcolor import colored, cprint
 from sysops.termInfo import termCols
 
@@ -22,8 +22,10 @@ def mainOS():
 
 
 if __name__ == "__main__":
-    os.system("cls")
+    try:
+        os.system("cls")
+    except:
+        os.system("clear")
     login.login()
-    os.system("cls")
     while True:
         mainOS()

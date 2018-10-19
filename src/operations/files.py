@@ -7,7 +7,7 @@ class Files:
     def make(self, indent):
         try:
             filename = input(str(indent) + "File name: ")
-            myFile = open(os.path.dirname(__file__) + "\\..\\..\\Files\\" + filename, "w")
+            myFile = open(os.path.dirname(__file__) + "/../../Files/" + filename, "w")
             contents = input(str(indent) + "Please write to the file (only one line): ")
             myFile.write(contents)
             myFile.close()
@@ -21,12 +21,12 @@ class Files:
 
     def delete(self, indent):
         filename = input(str(indent) + "What file would you like to delete? ")
-        os.remove(os.path.dirname(__file__) + "\\..\\..\\Files\\" + filename)
+        os.remove(os.path.dirname(__file__) + "/../../Files/" + filename)
 
     def listF(self, indent):
         dirList = []
         fileList = []
-        for root,dirs,files in os.walk(os.path.dirname(__file__) + "\\..\\..\\Files\\"):
+        for root,dirs,files in os.walk(os.path.dirname(__file__) + "/../../Files/"):
             for name in dirs:
                 dirList.append(name + "/")
             for Ffile in files:
