@@ -15,6 +15,7 @@ version = "2.2"
 cs = "Coming soon"
 
 def mainOS():
+    os.chdir(os.getcwd() + "/Files/")
     clear()
     cprint("PyOS v" + version, "magenta")
     cprint("Copyright DualKeys Inc. 2017-2018.", "magenta")
