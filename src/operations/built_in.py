@@ -23,8 +23,8 @@ class BaseBuilt_Ins:
             else:
                 os.system("clear")
 
-        def ls(self):
-            files.Files.listF(files.Files, "\t\t")
+        #def ls(self):
+        #    files.Files.listF(files.Files, "\t\t")
 
         def changecreds(self):
             user = input("\tWhat is your new username? ")
