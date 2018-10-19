@@ -7,14 +7,14 @@ class Directories:
     def make(self, indent):
         try:
             dirname = input(str(indent) + "What directory would you like to make? ")
-            os.mkdir(os.path.dirname("__file__") + "/../../Files/" + dirname)
+            os.mkdir(os.path.dirname(__file__) + "/../../Files/" + dirname)
         except:
             cprint("There was an error while making this directory, it may already exist", "red")
     
     def delete(self, indent):
         dirname = input(str(indent) + "What directory would you like to delete? ")
         try:
-            os.rmdir(os.path.dirname("__file__") + "/../../Files/" + dirname)
+            os.rmdir(os.path.dirname(__file__) + "/../../Files/" + dirname)
         except:
             cprint("Please empty the directory first", "red")
 

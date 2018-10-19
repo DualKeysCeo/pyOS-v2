@@ -5,7 +5,7 @@ from termcolor import colored, cprint
 
 def login():
     cprint("User authentication needed!", "yellow")
-    fp = open(os.path.dirname("__file__") + "/user.info", "r+")
+    fp = open(os.path.dirname(__file__) + "/user.info", "r+")
     for i, line in enumerate(fp):
         line = line.rstrip()
         if i == 0:
