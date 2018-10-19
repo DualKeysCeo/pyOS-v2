@@ -15,17 +15,19 @@ version = "2.2"
 cs = "Coming soon"
 
 def mainOS():
-    os.system("cls")
+    clear()
     cprint("PyOS v" + version, "magenta")
     cprint("Copyright DualKeys Inc. 2017-2018.", "magenta")
     mainOps()
 
+def clear():
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 if __name__ == "__main__":
-    try:
-        os.system("cls")
-    except:
-        os.system("clear")
+    clear()
     login.login()
     while True:
         mainOS()

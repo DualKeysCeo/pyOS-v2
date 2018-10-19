@@ -21,9 +21,9 @@ class BaseBuilt_Ins:
             login.logout()
 
         def clear(self):
-            try:
+            if os.name == "nt":
                 os.system("cls")
-            except:
+            else:
                 os.system("clear")
 
         def ls(self):
