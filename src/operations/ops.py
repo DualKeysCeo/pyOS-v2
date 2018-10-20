@@ -9,7 +9,7 @@ from multiprocessing import Process
 item1 = "\t"
 
 def find_exec_in_path(executable_name):
-    executable_path =  os.getcwd()
+    executable_path = os.getcwd()
     current_path = os.path.join(executable_path, executable_name)
     if os.path.isfile(current_path) and os.access(current_path, os.X_OK):
         return executable_name

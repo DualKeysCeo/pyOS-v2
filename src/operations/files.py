@@ -23,19 +23,6 @@ class Files:
         filename = input(str(indent) + "What file would you like to delete? ")
         os.remove(os.path.dirname(__file__) + "/../../Files/" + filename)
 
-    def listF(self, indent):
-        dirList = []
-        fileList = []
-        for root,dirs,files in os.walk(os.path.dirname(__file__) + "/../../Files/"):
-            for name in dirs:
-                dirList.append(name + "/")
-            for Ffile in files:
-                fileList.append(Ffile)
-        for i in wrap("    ".join(dirList), width=termInfo.termCols()):
-            cprint(i, "red")
-        for i in wrap("    ".join(fileList), width=termInfo.termCols()):
-            cprint(i, "cyan")
-
 fileOps = [
     "make",
     "open",

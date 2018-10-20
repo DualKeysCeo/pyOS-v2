@@ -23,9 +23,6 @@ class BaseBuilt_Ins:
             else:
                 os.system("clear")
 
-        #def ls(self):
-        #    files.Files.listF(files.Files, "\t\t")
-
         def changecreds(self):
             user = input("\tWhat is your new username? ")
             password = input("\tWhat is your new password? ")
@@ -44,11 +41,13 @@ class BaseBuilt_Ins:
 
         def help(self):
             method_list = [func for func in dir(self) if callable(getattr(self, func)) and not func.startswith("__")]
+            method_list.append("ls")
             for i in wrap("    ".join(method_list), width=termInfo.termCols() * (2.0/3.0)):
                 cprint(i, "cyan")
 
         def list(self):
             method_list = [func for func in dir(self) if callable(getattr(self, func)) and not func.startswith("__")]
+            method_list.append("ls")
             for i in wrap("    ".join(method_list), width=termInfo.termCols() * (2.0/3.0)):
                 cprint(i, "cyan")
 
