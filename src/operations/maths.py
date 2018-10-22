@@ -1,6 +1,6 @@
 from textwrap import wrap
 from sysops import termInfo
-from termcolor import colored, cprint
+from integrations.termcolor import colored, cprint
 
 class Math:
     def _init_(self):

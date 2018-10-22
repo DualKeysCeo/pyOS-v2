@@ -2,4 +2,4 @@ Files/*.*
 **/__pychache__
 *.pyc
 .DS_Store
-user.info
+**/user

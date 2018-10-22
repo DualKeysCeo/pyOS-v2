@@ -2,7 +2,7 @@ import os
 import sys
 import subprocess
 import __main__
-from termcolor import colored, cprint
+from integrations.termcolor import colored, cprint
 from operations.built_in import BaseBuilt_Ins
 from multiprocessing import Process
 
@@ -38,7 +38,7 @@ def mainOps():
 			selected_builtin()
 		elif find_exec_in_path(command[0]) is not None:
 			try:
-				result = subprocess.call(command, shell=True)
+				subprocess.call(command, shell=True)
 			except subprocess.CalledProcessError:
 				pass
 		else:

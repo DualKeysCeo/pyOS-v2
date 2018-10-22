@@ -1,25 +1,34 @@
 import os
 import __main__
 from time import sleep
-from termcolor import colored, cprint
+from operations import credentials
+from integrations.termcolor import colored, cprint
 
 def login():
-    cprint("User authentication needed!", "yellow")
-    fp = open(os.path.dirname("__file__") + "/user.info", "r+")
-    for i, line in enumerate(fp):
-        line = line.rstrip()
-        if i == 0:
-            global user
-            user = line
-        elif i == 1:
-            global password
-            password = line
+    try:
+        fp = open(os.path.dirname(__file__) + "\\..\\user\\user_login.info", "r+")
+        for i, line in enumerate(fp):
+            line = line.rstrip()
+            if i == 0:
+                global user
+                user = line
+            elif i == 1:
+                global password
+                password = line
+    except:
+        cprint("Please make an account", "yellow")
+        user = input(colored("pyOS/Login/new username> ", "white"))
+        password = input(colored("pyOS/Login/new password> ", "white"))
+        credentials.change(user, password)
+        __main__.clear()
+        login()
 
     global userI
     global passwordI
     if user and password:
-        userI = input(colored("pyOS/Login/Username> ", "white"))
-        passwordI = input(colored("pyOS/Login/Password> ", "white"))
+        cprint("User authentication needed!", "yellow")
+        userI = input(colored("pyOS/Login/username> ", "white"))
+        passwordI = input(colored("pyOS/Login/password> ", "white"))
         if userI == user:
             if passwordI == password:
                 print("Access Granted")
@@ -31,13 +40,12 @@ def login():
         else:
             cprint("Username incorrect", "red")
             login()
-    else:
-        cprint("Please make an account")
+
 
 def logout():
     string = "Logging out"
     sleep(0.5)
-    for _ in range(4):
+    for i in range(4):
         if string == "Logging out...":
             string = "Logging out"
             sleep(0.5)
