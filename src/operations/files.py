@@ -17,7 +17,7 @@ class Files:
     def use(self, indent):
         filename = input(str(indent) + "What file do you want to open? ")
         print(filename)
-        os.system("start ..\\..\\Files\\" + filename)
+        os.system("start ../../Files/" + filename)
 
     def delete(self, indent):
         filename = input(str(indent) + "What file would you like to delete? ")
