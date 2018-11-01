@@ -1,5 +1,5 @@
 Files/*.*
-*/__pychache__/
-__pychache__/*.*
+**/__pychache__
 *.pyc
 .DS_Store
+**/user

@@ -3,7 +3,7 @@ from time import sleep
 from sysops import login
 from textwrap import wrap
 from operations.ops import mainOps
-from termcolor import colored, cprint
+from integrations.termcolor import colored, cprint
 from sysops.termInfo import termCols
 
 global user
@@ -11,11 +11,10 @@ global password
 global userI
 global passwordI
 
-version = "2.2"
+version = "2.3"
 cs = "Coming soon"
 
 def mainOS():
-    os.chdir(os.getcwd() + "/Files/")
     clear()
     cprint("PyOS v" + version, "magenta")
     cprint("Copyright DualKeys Inc. 2017-2018.", "magenta")

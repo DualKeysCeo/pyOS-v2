@@ -1,7 +1,7 @@
 import os
 from textwrap import wrap
 from sysops import login, termInfo
-from termcolor import colored, cprint
+from integrations.termcolor import colored, cprint
 from operations import credentials, maths, files, directories
 
 class BaseBuilt_Ins:

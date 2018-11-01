@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	id="svg3054" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 358.9 306.3"
+	style="enable-background:new 0 0 358.9 306.3;" xml:space="preserve">
+	<style type="text/css">
+		.st0{clip-path:url(#SVGID_2_);}
+		.st1{fill:#5BB3DF;fill-opacity:0;}
+		.st2{fill:#363631;}
+		.st3{fill:#EFEFEF;}
+		.st4{fill:#2C2C28;}
+		.st5{fill:#EEEEEE;}
+		.st6{fill:#FF3333;}
+		.st7{fill:#FFCC00;}
+		.st8{fill:#00FF55;}
+		.st9{fill:url(#path8615_1_);}
+		.st10{fill:url(#path8620_1_);}
+	</style>
+	<g id="Background" transform="translate(-45.542439,-72.074391)">
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="0" y="0" width="450" height="450"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g id="Group1" class="st0">
+				<path id="path3063" class="st1" d="M0,450h450V0H0V450z"/>
+				<path id="path3065" class="st2" d="M388.9,72.1H61.1c-8.5,0-15.5,7-15.5,15.6v275.2c0,8.6,7,15.5,15.5,15.5h327.8
+					c8.5,0,15.5-7,15.5-15.5V87.7C404.5,79.1,397.4,72.1,388.9,72.1"/>
+				<path id="path3067" class="st3" d="M388.9,72.1H61.1c-8.5,0-15.5,7-15.5,15.6v53.5h358.9V87.7C404.5,79.1,397.4,72.1,388.9,72.1"/>
+				<path id="path3069" class="st4" d="M45.5,155.4h358.9v-14.2H45.5V155.4z"/>
+				<path id="path3071" class="st5" d="M209.2,309.7l48.5-48.5l-48.5-48.5l-17,17l31.5,31.5l-31.5,31.5L209.2,309.7"/>
+				<path id="path3075" class="st6" d="M101.1,106.4c0,7.2-5.9,13.1-13.1,13.1c-7.2,0-13.1-5.9-13.1-13.1c0-7.2,5.9-13.1,13.1-13.1
+					C95.2,93.3,101.1,99.2,101.1,106.4"/>
+				<path id="path3077" class="st7" d="M139.5,106.4c0,7.2-5.9,13.1-13.1,13.1c-7.2,0-13.1-5.9-13.1-13.1c0-7.2,5.9-13.1,13.1-13.1
+					C133.6,93.3,139.5,99.2,139.5,106.4"/>
+				<path id="path3079" class="st8" d="M177.9,106.4c0,7.2-5.9,13.1-13.1,13.1c-7.3,0-13.1-5.9-13.1-13.1c0-7.2,5.9-13.1,13.1-13.1
+					C172.1,93.3,177.9,99.2,177.9,106.4"/>
+			</g>
+		</g>
+	</g>
+	<g id="layer1" transform="translate(-473.36088,-251.72485)" groupmode="layer" label="Calque 1">
+		<g id="g1894" transform="translate(428.42338,184.2561)">
+			<linearGradient id="path8615_1_" gradientUnits="userSpaceOnUse" x1="120.5697" y1="164.284" x2="175.1698" y2="109.5014" gradientTransform="matrix(1 0 0 -1 -44.9375 375.4688)">
+				<stop  offset="0" style="stop-color:#387EB8"/>
+				<stop  offset="1" style="stop-color:#366994"/>
+			</linearGradient>
+			<path id="path8615" class="st9" d="M120.1,201.3c-28,0-26.3,12.2-26.3,12.2l0,12.6h26.8v3.8H83.2c0,0-17.9-2-17.9,26.3
+				c0,28.3,15.7,27.3,15.7,27.3h9.3v-13.1c0,0-0.5-15.7,15.4-15.7s26.5,0,26.5,0s14.9,0.2,14.9-14.4c0-14.6,0-24.2,0-24.2
+				S149.4,201.3,120.1,201.3z M105.3,209.8c2.7,0,4.8,2.2,4.8,4.8c0,2.7-2.2,4.8-4.8,4.8s-4.8-2.2-4.8-4.8
+				C100.5,211.9,102.7,209.8,105.3,209.8z"/>
+			
+			<linearGradient id="path8620_1_" gradientUnits="userSpaceOnUse" x1="154.1458" y1="129.4095" x2="212.7864" y2="73.2288" gradientTransform="matrix(1 0 0 -1 -44.9375 375.4688)">
+				<stop  offset="0" style="stop-color:#FFE052"/>
+				<stop  offset="1" style="stop-color:#FFC331"/>
+			</linearGradient>
+			<path id="path8620" class="st10" d="M120.9,311.2c28,0,26.3-12.2,26.3-12.2l0-12.6h-26.8v-3.8h37.4c0,0,17.9,2,17.9-26.3
+				c0-28.3-15.7-27.3-15.7-27.3h-9.3v13.1c0,0,0.5,15.7-15.4,15.7s-26.5,0-26.5,0s-14.9-0.2-14.9,14.4s0,24.2,0,24.2
+				S91.6,311.2,120.9,311.2z M135.6,302.7c-2.7,0-4.8-2.2-4.8-4.8c0-2.7,2.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8
+				C140.5,300.6,138.3,302.7,135.6,302.7z"/>
+		</g>
+	</g>
+</svg>
